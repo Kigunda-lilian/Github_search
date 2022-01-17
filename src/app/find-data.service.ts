@@ -39,15 +39,17 @@ let promise:any= new Promise<void>((resolve,rejects)=>{
   }
   )
   return promise
+ 
 })
 }
 
 constructor( private httpClient:HttpClient) {
 this.user=new User("","","","",new Date(),0,0,0)
+
 }
 
 
- 
+  
 
  
 }
