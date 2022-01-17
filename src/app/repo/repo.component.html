@@ -1,4 +1,4 @@
-<form class="d-flex">
-    <input class="form-control me-2" type="search" placeholder="Search repo here" aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Search</button>
+<form class="container bg-light" #form="ngForm">
+    <input class="form-control me-2" type="search" id="userform" name="usrForm" [(ngModel)]='fillImput.login' placeholder="Search" aria-label="Search">
+    <button (click)='find()' class="btn btn-outline-success" type="submit">Search</button>
 </form>
