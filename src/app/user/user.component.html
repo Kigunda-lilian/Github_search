@@ -1,11 +1,14 @@
 <app-repo (getUser)="findUser($event)">
 </app-repo>
-<div *ngIf="user">
+<div class="container"*ngIf="user">
     <p>
         {{user.login}}
     </p>
     <p>
-        {{user.name}}
+        {{user.name}}<br>
+        {{user.created_at|date}}<br>
+        {{user.html_url}}<br>
+    
     </p>
 
     <p>
@@ -13,10 +16,10 @@
     </p>
     <p>
         {{user.followers}}
+        
     </p>
 
 
 
 </div>
 
-<p>ooodhiidsdsdsdsdsdsisdvs</p>
